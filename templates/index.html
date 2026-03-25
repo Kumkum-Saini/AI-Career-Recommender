@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Career Recommender</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            color: black;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        input,
+        select {
+            margin: 5px;
+            padding: 8px;
+            width: 80%;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+        }
+
+        button:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AI Career Recommender</h1>
+
+    <div class="container">
+        <form action="/predict" method="POST">
+            <h3>Technical Skills</h3>
+            <select name="python" required>
+                <option value="" disabled selected>Python</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="java" required>
+                <option value="" disabled selected>Java</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="sql" required>
+                <option value="" disabled selected>SQL</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="ml" required>
+                <option value="" disabled selected>Machine Learning</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="dsa" required>
+                <option value="" disabled selected>DSA</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="web" required>
+                <option value="" disabled selected>Web Development</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="cloud" required>
+                <option value="" disabled selected>Cloud</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="networking" required>
+                <option value="" disabled selected>Networking</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="linux" required>
+                <option value="" disabled selected>Linux</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="git" required>
+                <option value="" disabled selected>Git</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <!-- Interests -->
+            <h3>Interests (1 - 5)</h3>
+
+            <select name="math" required>
+                <option value="" disabled selected>Math Interest</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <select name="design" required>
+                <option value="" disabled selected>Design Interest</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <select name="data" required>
+                <option value="" disabled selected>Data Interest</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <select name="management" required>
+                <option value="" disabled selected>Management Interest</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+
+            <h3>Personality</h3>
+            <select name="communication" required>
+                <option value="" disabled selected>Select Communication Level</option>
+                <option value="0">Low</option>
+                <option value="1">Medium</option>
+                <option value="2">High</option>
+            </select><br>
+
+            <select name="leadership" required>
+                <option value="" disabled selected>Select Leadership Level</option>
+                <option value="0">Low</option>
+                <option value="1">Medium</option>
+                <option value="2">High</option>
+            </select><br>
+
+            <select name="creativity" required>
+                <option value="" disabled selected>Select Creativity Level</option>
+                <option value="0">Low</option>
+                <option value="1">Medium</option>
+                <option value="2">High</option>
+            </select><br>
+
+            <button type="submit">Get Career Recommendation</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

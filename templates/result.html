@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            color: black;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background: #185a9d;
+            padding: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Your Career Recommendation</h1>
+
+    <div class="box">
+        <h2>{{ career }}</h2>
+
+        <p><b>Description:</b> {{ description }}</p>
+
+        <h3>Required Skills:</h3>
+        <ul>
+            {% for skill in skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Skill Gaps:</h3>
+        <ul>
+            {% for gap in gaps %}
+                <li>{{ gap }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="/">Try Again</a>
+    </div>
+
+</body>
+</html>
