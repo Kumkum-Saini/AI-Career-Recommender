@@ -1,4 +1,4 @@
- def get_career_info(career):
+def get_career_info(career):
     info = {
         "Data Scientist": {
             "skills": ["Python", "ML", "SQL", "Math"],
@@ -50,12 +50,8 @@
 def skill_gap(user_input, required_skills):
     gap = []
 
-    if required_skills:
-        if "Python" in required_skills and user_input["Python"] == 0:
-            gap.append("Python")
-        if "ML" in required_skills and user_input["ML"] == 0:
-            gap.append("Machine Learning")
-        if "SQL" in required_skills and user_input["SQL"] == 0:
-            gap.append("SQL")
+    for skill in required_skills:
+        if skill in user_input and user_input[skill] == 0:
+            gap.append(skill)
 
     return gap
