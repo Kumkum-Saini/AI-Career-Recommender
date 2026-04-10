@@ -45,7 +45,7 @@ def predict():
         "result.html",
         career=prediction,
         description=info.get("description"),
-        skills=info.get("skills"),
+        skills=info.get("skills",[]),
         gaps=gaps
     )
 
