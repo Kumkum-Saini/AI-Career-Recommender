@@ -5,7 +5,7 @@ The AI Career Recommendation System is a web-based application that predicts sui
 
 This project uses Machine Learning along with a Flask web application to provide intelligent career suggestions.
 
-**Features**
+**Features**:
 
 User-friendly web interface for input
 Takes technical skills, interests, and personality traits as input
@@ -13,7 +13,7 @@ Uses a trained Machine Learning model for prediction
 Displays the most suitable career option
 Real-time prediction using Flask backend
 
-**Tech Stack**
+**Tech Stack**:
 
 Programming Language: Python
 Framework: Flask
@@ -22,7 +22,7 @@ Data Handling: Pandas, NumPy
 Frontend: HTML, CSS
 Model Storage: Pickle
 
-📊 Dataset
+📊 Dataset:
 
 Custom dataset generated using Python
 Includes:
@@ -31,7 +31,7 @@ Interests (Math, Design, Data, Management)
 Personality traits (Communication, Leadership, Creativity)
 Rule-based logic used for realistic career assignment
 
-▶️ How to Run the Project
+▶️ How to Run the Project:
 
 Clone the repository
 Install dependencies:
@@ -41,5 +41,5 @@ python app.py
 Open browser and go to:
 http://127.0.0.1:5000/
 
-**Conclusion**
+**Conclusion**:
 This project demonstrates the integration of Machine Learning with web development using Flask, providing a real-world solution for career guidance.
