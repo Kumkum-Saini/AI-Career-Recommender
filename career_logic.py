@@ -1,4 +1,4 @@
-def get_career_info(career):
+ def get_career_info(career):
     info = {
         "Data Scientist": {
             "skills": ["Python", "ML", "SQL", "Math"],
@@ -19,10 +19,33 @@ def get_career_info(career):
         "Full Stack Developer": {
             "skills": ["Frontend", "Backend", "Database"],
             "description": "Works on both frontend and backend."
+        },
+        "Cloud Engineer": {
+            "skills": ["Cloud", "Linux", "Networking"],
+            "description": "Manages cloud infrastructure and deployment systems."
+        },
+        "DevOps Engineer": {
+            "skills": ["Linux", "Git", "Cloud"],
+            "description": "Automates deployment and manages CI/CD pipelines."
+        },
+        "Cybersecurity Analyst": {
+            "skills": ["Networking", "Linux", "Security"],
+            "description": "Protects systems and networks from cyber threats."
+        },
+        "Software Tester": {
+            "skills": ["Testing", "Debugging", "Attention to Detail"],
+            "description": "Ensures software quality by identifying bugs and issues."
+        },
+        "Product Manager": {
+            "skills": ["Communication", "Leadership", "Management"],
+            "description": "Leads product development and coordinates between teams."
         }
     }
-    
-    return info.get(career, {})
+
+    return info.get(career, {
+        "skills": [],
+        "description": "No information available for this career."
+    })
 
 def skill_gap(user_input, required_skills):
     gap = []
